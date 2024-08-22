@@ -1,10 +1,10 @@
-import React, { forwardRef, useState } from 'react';
+import { useState } from 'react';
 import "./Form.css"
 import { useDispatch, useSelector } from 'react-redux';
 import { RootState, FormState, AppDispatch, toSendForm, turnIsSend } from './../../store/store';
 
 
-const Form = forwardRef((props, ref) => {
+const Form = () => {
     const [nameForm, setNameForm] = useState('');
     const [numberForm, setNumberForm] = useState('');
     const [agreementForm, setAgreementForm] = useState(false);
@@ -49,7 +49,7 @@ const Form = forwardRef((props, ref) => {
     return (
         <div className='content'>
             <div className='wrapper'>
-                <div className='content-title' ref={ref}>
+                <div className='content-title'>
                     <h2>Отправь форму</h2>
                 </div>
                 <div className='form'>
@@ -83,6 +83,6 @@ const Form = forwardRef((props, ref) => {
             </div>
         </div>
      );
-});
+};
 
 export default Form;

@@ -1,6 +1,5 @@
 import "./questionAndAnswer.css"
 import {OneQuestion} from "./question";
-import { forwardRef } from "react";
 
 export interface Question{
     title: string;
@@ -38,11 +37,11 @@ const listOfQuestions: Question[] = [
     },
 ]
 
-const QuestionAndAnswer = forwardRef((props, ref) => {
+const QuestionAndAnswer = () => {
     return (
         <div className='content'>
             <div className='wrapper'>
-                <div className='content-title' ref={ref}>
+                <div className='content-title'>
                     <h2>Вопросы и ответы</h2>
                 </div>
                 <div className='all-questions'>
@@ -51,6 +50,6 @@ const QuestionAndAnswer = forwardRef((props, ref) => {
             </div>
         </div>
     );
-});
+};
 
 export default QuestionAndAnswer;

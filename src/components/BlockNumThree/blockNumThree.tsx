@@ -1,12 +1,10 @@
-
-import { forwardRef } from "react";
 import "./blockNumThree.css"
 
-const BlockNumberThree = forwardRef((props, ref) => {
+const BlockNumberThree = () => {
     return (
         <div className='content blockthree'>
             <div className='wrapper'>
-                <div className="row plus" ref={ref}>
+                <div className="row plus">
                     <div className="col one">
                         <div className='content-title'>
                             <h3>Круто, ты дошел до третьего блока</h3>
@@ -24,6 +22,6 @@ const BlockNumberThree = forwardRef((props, ref) => {
             </div>
         </div>
     );
-});
+};
 
 export default BlockNumberThree;

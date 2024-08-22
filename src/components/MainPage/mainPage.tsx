@@ -10,25 +10,25 @@ import { useRef } from "react";
 
 export default function MainPage(){
     // Логика для скролла
-    const sectionRefOne = useRef<HTMLDivElement | any>(null);
+    const sectionRefOne = useRef(document.createElement("div"));
 
     const scrollToSection = () => {
         sectionRefOne.current.scrollIntoView({ behavior: 'smooth' });
     };
 
-    const sectionRefTwo = useRef<HTMLDivElement | any>(null);
+    const sectionRefTwo = useRef(document.createElement("div"));
 
     const scrollToSectionTwo = () => {
         sectionRefTwo.current.scrollIntoView({ behavior: 'smooth' });
     };
 
-    const sectionRefThree = useRef<HTMLDivElement | any>(null);
+    const sectionRefThree = useRef(document.createElement("div"));
 
     const scrollToSectionThree = () => {
         sectionRefThree.current.scrollIntoView({ behavior: 'smooth' });
     };
 
-    const sectionRefFour = useRef<HTMLDivElement | any>(null);
+    const sectionRefFour = useRef(document.createElement("div"));
 
     const scrollToSectionFour = () => {
         sectionRefFour.current.scrollIntoView({ behavior: 'smooth' });
@@ -73,12 +73,12 @@ export default function MainPage(){
                     </div>
                 </div>
             </div>
-            <HowItWorks ref={sectionRefOne}/>
-            <BlockNumberThree ref={sectionRefTwo}/>
+            <div ref={sectionRefOne}><HowItWorks/></div>
+            <div ref={sectionRefTwo}><BlockNumberThree/></div>
             <Reviews/>
-            <QuestionAndAnswer ref={sectionRefThree}/>
+            <div ref={sectionRefThree}><QuestionAndAnswer/></div>
             <MicroCredit/>
-            <Form ref={sectionRefFour}/>
+            <div ref={sectionRefFour}><Form/></div>
             <Footer/>
         </>
      );

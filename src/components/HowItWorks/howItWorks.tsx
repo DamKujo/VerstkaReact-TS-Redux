@@ -1,12 +1,10 @@
 import "./howItWorks.css"
-import { forwardRef } from "react";
 
-
-const HowItWorks = forwardRef((props, ref) => {
+const HowItWorks = () => {
     return (
         <div className='content'>
             <div className='wrapper'>
-                <div className='content-title' ref={ref}>
+                <div className='content-title'>
                 <h2>Как это работает</h2>
                 </div>
                 <div className='steps'>
@@ -52,6 +50,6 @@ const HowItWorks = forwardRef((props, ref) => {
             </div>
         </div>
     );
-});
+};
 
 export default HowItWorks;
