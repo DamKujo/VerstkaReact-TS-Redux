@@ -1,0 +1,89 @@
+.micro-title{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.micro-text{
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+/* 768px */
+
+@media(max-width: 768px){
+    .mrgtop{
+        display: inline-block;
+    }
+
+    .ipad{
+        display: contents;
+        width: 768px;
+    }
+    
+    .micro-title{
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 24px;
+        width: 755px;
+    }
+    
+    .micro-text{
+        font-size: 17px;
+        line-height: 28px;
+        font-weight: normal;
+        width: 755px;
+    }
+}
+
+/* 375px */
+
+@media(max-width: 375px){
+    .mrgtop{
+        display: inline-block;
+    }
+
+    .ipad{
+        display: contents;
+        width: 365px;
+    }
+
+    .micro-title{
+        font-size: 17px;
+        font-weight: bold;
+        line-height: 24px;
+        width: 365px;
+    }
+    
+    .micro-text{
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: normal;
+        width: 365px;
+    }
+}
+
+/* 325px */
+
+@media(max-width: 325px){
+
+    .ipad{
+        display: contents;
+        width: 305px;
+    }
+
+    .micro-title{
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 24px;
+        width: 305px;
+    }
+    
+    .micro-text{
+        font-size: 12px;
+        line-height: 20px;
+        font-weight: normal;
+        width: 305px;
+    }
+}
