@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import "./Form.css"
 import { useDispatch, useSelector } from 'react-redux';
-import { RootState, FormState, AppDispatch, toSendForm, turnIsSend } from './../../store/store';
+import { RootState, AppDispatch, toSendForm, turnIsSend } from './../../store/store';
 
 
 const Form = () => {
@@ -9,11 +9,6 @@ const Form = () => {
     const [numberForm, setNumberForm] = useState('');
     const [agreementForm, setAgreementForm] = useState(false);
     const [error, setError] = useState('');
-    const [dataFromForm, setDataFromForm] = useState<FormState>({
-        name: '',
-        number: '',
-        agreement: false,
-    });
     const form = useSelector((state: RootState) => state.form.isSend);
     const dispatch = useDispatch<AppDispatch>();
 
@@ -38,12 +33,11 @@ const Form = () => {
             number: numberForm,
             agreement: agreementForm
         };
-        setDataFromForm(newData);
+        dispatch(toSendForm(newData));
+        dispatch(turnIsSend());
         setAgreementForm(false);
         setNameForm('');
         setNumberForm('');
-        dispatch(toSendForm(newData));
-        dispatch(turnIsSend());
     };
 
     return (
