@@ -25,6 +25,27 @@
     }
 }
 
+/* 550px */
+
+@media (max-width: 550px){
+    .content-title h2{
+        margin-top: 15px;
+    }
+
+    .form{
+        max-width: 520px;
+        margin: 66px auto 66px;
+    }
+
+    .dspl{
+        display: grid;
+    }
+
+    .dspl div{
+        margin-bottom: 15px;
+    }
+}
+
 /* 375px */
 
 @media (max-width: 375px){

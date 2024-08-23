@@ -18,22 +18,75 @@
     }
 
     .ipad{
-        display: contents;
-        width: 768px;
+        display: grid;
+        max-width: 750px;
     }
     
     .micro-title{
         font-size: 20px;
         font-weight: bold;
         line-height: 24px;
-        width: 755px;
     }
     
     .micro-text{
         font-size: 17px;
         line-height: 28px;
         font-weight: normal;
-        width: 755px;
+    }
+}
+
+/* 550px */
+
+@media(max-width: 550px){
+    .mrgtop{
+        display: inline-block;
+    }
+
+    .ipad{
+        display: contents;
+        max-width: 520px;
+    }
+
+    .micro-title{
+        font-size: 19px;
+        font-weight: bold;
+        line-height: 26px;
+        max-width: 500px;
+    }
+    
+    .micro-text{
+        font-size: 16px;
+        line-height: 22px;
+        font-weight: normal;
+        max-width: 500px;
+    }
+}
+
+/* 450px */
+
+@media(max-width: 450px){
+    .mrgtop{
+        display: inline-block;
+    }
+
+    .ipad{
+        display: grid;
+        max-width: 400px;
+        margin-left: 30px;
+    }
+
+    .micro-title{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 25px;
+        max-width: 380px;
+    }
+    
+    .micro-text{
+        font-size: 15px;
+        line-height: 21px;
+        font-weight: normal;
+        max-width: 380px;
     }
 }
 
@@ -45,7 +98,7 @@
     }
 
     .ipad{
-        display: contents;
+        display: grid;
         width: 365px;
     }
 
@@ -69,7 +122,7 @@
 @media(max-width: 325px){
 
     .ipad{
-        display: contents;
+        display: grid;
         width: 305px;
     }
 

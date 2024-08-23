@@ -72,12 +72,68 @@ header{
 
 /* 786px */
 
-@media(max-width:375px){
+@media(max-width:768px){
 
     .navigation{
         width: 80px;
         position: relative;
         right: 100px;
+    }
+
+    .main-title-subtitle{
+        align-items: center;
+        max-width: 608px;
+        margin: 203px auto 0;
+        text-align: center;
+    }
+    
+    .main-title-subtitle h1{
+        font-size: 42px;
+        line-height: 55px;
+        margin-bottom: 15px;
+    }
+}
+
+/* 550px */
+
+@media(max-width:550px){
+
+    .main{
+        padding: 20px 0;
+        background: linear-gradient(rgba(42, 108, 234, 0.65), rgba(42, 108, 234, 1)), url('./../../../back/background.svg') center no-repeat;
+        background-size: cover;
+        min-height: 760px;
+        position: relative;
+        color: #fff;
+    }
+
+    .navigation{
+        width: 80px;
+        position: relative;
+        right: 20px;
+    }
+
+    .button{
+        margin-top: 72px;
+        text-align: center;
+    }
+
+    .main-title-subtitle{
+        align-items: center;
+        max-width: 450px;
+        margin: 153px auto 0;
+        text-align: center;
+    }
+    
+    .main-title-subtitle h1{
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 18px;
+    }
+
+    .nav-link{
+        margin-bottom: 12px;
+        line-height: 22px;
     }
 }
 
@@ -94,6 +150,12 @@ header{
         color: #fff;
     } 
 
+    .navigation{
+        width: 70px;
+        position: relative;
+        right: 17px;
+    }
+
     .main-title-subtitle{
         align-items: center;
         width: 288px;
@@ -104,6 +166,11 @@ header{
         font-size: 32px;
         line-height: 44px;
         margin-bottom: 15px;
+    }
+
+    .nav-link{
+        margin-bottom: 10px;
+        line-height: 20px;
     }
 }
 
